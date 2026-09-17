@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@source "../**";
+
+@layer base {
+  :root {
+    --bg-primary: #08090c;
+    --bg-secondary: #0f1219;
+    --bg-tertiary: #161b26;
+    --bg-card: rgba(16, 21, 32, 0.85);
+    --border-subtle: #1e2638;
+    --border-strong: #2c3850;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-cyan: #00e5ff;
+    --accent-blue: #0284c7;
+    --accent-indigo: #6366f1;
+    --status-success: #10b981;
+    --status-warning: #f59e0b;
+    --status-danger: #ef4444;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+  }
+
+  input, select, textarea {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  code, pre, .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3850;
+}
+
+/* Cesium UI Overrides */
+.cesium-widget,
+.cesium-widget canvas {
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+/* Completely remove all Cesium Ion watermarks, logo, and credit banners */
+.cesium-viewer-bottom,
+.cesium-viewer-bottomContainer,
+.cesium-widget-credits,
+.cesium-credit-wrapper,
+.cesium-credit-textContainer,
+.cesium-credit-expand-link,
+.cesium-credit-logoContainer {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Suppress raw Cesium Ion error popup panel */
+.cesium-widget-errorPanel {
+  display: none !important;
+}
+
+.cesium-infoBox {
+  background: rgba(15, 18, 25, 0.95) !important;
+  border: 1px solid #1e2638 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+  color: #f1f5f9 !important;
+  font-family: inherit !important;
+}
+
+.cesium-infoBox-title {
+  background: #161b26 !important;
+  color: #00e5ff !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #1e2638 !important;
+  padding: 8px 12px !important;
+  font-size: 13px !important;
+}
+
+.cesium-infoBox-description {
+  color: #cbd5e1 !important;
+  font-size: 12px !important;
+  padding: 10px !important;
+}
+
+/* Precision Grid Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

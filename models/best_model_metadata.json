@@ -1,0 +1,24 @@
+{
+  "architecture": "FloodUNet",
+  "input_channels": 6,
+  "input_bands": [
+    "B2",
+    "B3",
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "parameters": 7763905,
+  "best_epoch": 28,
+  "best_validation_iou": 0.8316135826498515,
+  "epochs_completed": 36,
+  "training_time_seconds": 1050.8162589073181,
+  "optimizer": "AdamW",
+  "loss": "BCE + Dice",
+  "water_class_weight": 9.5201,
+  "early_stopping_patience": 8,
+  "test_used": false,
+  "checkpoint_metric": "validation_IoU",
+  "best_checkpoint": "/content/drive/MyDrive/SIH_26071_Rainfall_AI/model2_inundation/models/checkpoints/best_model.pth"
+}

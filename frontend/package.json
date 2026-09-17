@@ -1,0 +1,37 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "postinstall": "node -e \"const fs=require('fs'); const path=require('path'); const s=path.join(__dirname,'node_modules/cesium/Build/Cesium'); const d=path.join(__dirname,'public/cesium'); if(fs.existsSync(s)&&!fs.existsSync(d)){fs.cpSync(s,d,{recursive:true}); console.log('Cesium assets copied');}\""
+  },
+  "dependencies": {
+    "cesium": "1.145.0",
+    "lucide-react": "^1.16.0",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.20.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "jsdom": "^30.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^3.0.0"
+  }
+}

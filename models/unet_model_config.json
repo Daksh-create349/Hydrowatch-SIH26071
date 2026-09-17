@@ -1,0 +1,26 @@
+{
+  "architecture": "FloodUNet",
+  "input_channels": 6,
+  "input_bands": [
+    "B2",
+    "B3",
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "base_channels": 32,
+  "parameters": 7763905,
+  "loss": {
+    "name": "BCE + Dice",
+    "bce_weight": 0.5,
+    "dice_weight": 0.5,
+    "water_class_weight": 9.5201
+  },
+  "labels": {
+    "no_data": 255,
+    "background": 0,
+    "water": 1
+  },
+  "checkpoint_metric": "validation_iou"
+}

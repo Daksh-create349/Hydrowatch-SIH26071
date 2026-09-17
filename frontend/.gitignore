@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.*
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Environment variables & local tokens (DO NOT COMMIT)
+.env
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Generated / static vendor assets
+public/cesium/
+
+# OS & Cache
+.DS_Store
+*.tsbuildinfo

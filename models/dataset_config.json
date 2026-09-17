@@ -1,0 +1,42 @@
+{
+  "dataset": "Sen1Floods11 v1.1",
+  "task": "binary flood segmentation",
+  "input": {
+    "modality": "Sentinel-2",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "raster_band_indices": [
+      2,
+      3,
+      4,
+      8,
+      12,
+      13
+    ],
+    "channels": 6,
+    "image_size": "512x512",
+    "reflectance_scale": 10000.0
+  },
+  "labels": {
+    "no_data": -1,
+    "background": 0,
+    "water": 1,
+    "ignore_index": 255
+  },
+  "splits": {
+    "train": 252,
+    "validation": 89,
+    "test": 90
+  },
+  "training": {
+    "batch_size": 8,
+    "num_workers": 2,
+    "water_class_weight": 9.520109931366331
+  }
+}
