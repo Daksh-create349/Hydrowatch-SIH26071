@@ -43,8 +43,8 @@
 *Figure 5: Operational Doppler weather radar volume reflectivity sweep over the Mumbai metropolitan corridor (19.0760° N, 72.8777° E), demonstrating live convective storm echo tracking, multi-step timeline playback, and calibrated Marshall-Palmer rain rates.*
 
 > **Video Stream Links**:
-> - [▶ Watch / Download Web-Optimized MP4 (696 KB)](docs/videos/radar_telemetry_demo.mp4)
-> - [▶ Raw Apple QuickTime Recording MOV (5.7 MB)](docs/videos/radar_telemetry_demo.mov)
+> - [Watch / Download Web-Optimized MP4 (696 KB)](docs/videos/radar_telemetry_demo.mp4)
+> - [Raw Apple QuickTime Recording MOV (5.7 MB)](docs/videos/radar_telemetry_demo.mov)
 
 ---
 
