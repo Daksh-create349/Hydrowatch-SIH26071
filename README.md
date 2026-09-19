@@ -11,7 +11,6 @@
 
 **HydroWatch** is an operational, commercial-grade geospatial intelligence and flood early warning platform. Developed for **Smart India Hackathon (SIH 2026, Problem Statement PS 26071)**, the platform bridges the critical operational gap between point meteorological forecasts and street-level flood inundation by fusing ground observations, numerical weather predictions (NWP), live Doppler radar mosaics, and high-resolution Sentinel-2 multispectral satellite imagery into an interactive, photorealistic 3D digital twin.
 
----
 
 ## Interactive 3D Geospatial Intelligence Showcase
 
